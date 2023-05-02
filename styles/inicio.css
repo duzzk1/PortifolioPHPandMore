@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    background-color: #F1F6F8;
+}
+
+body{
+    display: flex;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+}
+
+.container-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-logo img{
+    max-width: 80%;
+    position: absolute;
+    left: 106px;
+    z-index: 0;
+}
+
+nav {
+    display: flex;
+    text-transform: uppercase;
+    width: 100%;
+    justify-content: center;
+    font-size: 24px;
+}
+
+
+
+.menu-toggle{
+    display: none;
+}
+
+.container-lista{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.container-lista ul{
+    display: flex;
+}
+
+.container-lista ul li:hover a{
+    color: #8CD6FF;
+}
+
+.container-lista ul li a{
+    color: black;
+    line-height: 29px;
+    letter-spacing: 0.075em;
+    margin-right: 114px ;
+}
+.container-lista ul li:last-child{
+    margin-right: 0px ;
+
+}
+
+
+
+
+
+.menu-toggle:hover{
+    color: rgba(0,0,0,0.4);
+    cursor: pointer;
+}
+
+
+main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 90px;
+}
+
+.container-left{
+    min-width: 50%;
+    height: 83vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 63px;
+    position: relative;
+    margin-top: 63px;
+}
+
+.whois{
+    width: 555px;
+    height: 193px;
+    display: flex;
+    align-items: center;
+
+}
+.whois h2{
+    font-family: Inter, sans-serif;
+    font-size: 42px;
+    font-weight: 100;
+    line-height: 59px;
+    letter-spacing: 0.25em;
+
+}
+.whois h2 > span{
+    font-weight: 400;
+}
+.phpBold{
+    font-weight: 600;
+}
+.whois-desc{
+    font-family: Inter, sans-serif;
+    font-size: 32px;
+    font-weight: 100;
+    line-height: 39px;
+    width: 606px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button{
+    border: none;
+    background: none;
+}
+.linkedin-btn a{
+    width: 281px;
+    height: 72px;
+    background: linear-gradient(90deg, #7CA0FB 5%, #8CD6FF 90%);
+    border-radius: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-color: transparent transparent;
+
+}
+
+
+.linkedin-btn:hover a{
+    width: 311px;
+    height: 82px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.linkedin-btn a span{
+    font-weight: 200;
+    font-size: 28px;
+    line-height: 34px;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+}
+
+.linkedin-btn img{
+    background-color: transparent;
+}
+
+.whois-line{
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    width: 606px;
+}
+
+.projects{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    position: relative;
+    bottom: 40px;
+}
+.project1{
+    width: 287px;
+    height: 200px;
+    position: relative;
+    background: linear-gradient(270deg, rgba(140, 213, 255, 0.2) 0%, rgba(126, 163, 252, 0.4) 100%);    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    color: black;
+}
+
+.project1::before{
+    content: "";
+    background-image: url("/assets/videos/soon.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #F1F6F8;
+}
+.project2{
+    width: 287px;
+    height: 200px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(140, 213, 255, 0.2) 0%, rgba(126, 163, 252, 0.4) 100%);
+    border: 1px solid #FFFFFF;
+    border-radius: 15px;
+    overflow: hidden;
+    color: black;
+}
+.project2::before{
+    content: "";
+    background-image: url("/assets/videos/soon.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: #F1F6F8;
+}
+
+.projectLabel{
+    position: relative;
+    top: 70%;
+    left: 20px;
+
+}
+
+.project1-id,.project1-desc{
+    background: linear-gradient(270deg, rgba(140, 213, 255, 0.2) 0%, rgba(126, 163, 252, 0.4) 100%);    border: 1px solid #FFFFFF;
+    z-index: -1;
+    border: none;
+}
+
+.project2-id,.project2-desc{
+    background: linear-gradient(90deg, rgba(140, 213, 255, 0.2) 0%, rgba(126, 163, 252, 0.4) 100%);
+    z-index: -1;
+    border: none;
+}
+.container-right{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-right img{
+    min-width: 60%;
+}
+@media screen and (max-width: 1280px) {
+    .container-lista{
+        display: none;
+    }
+    .active{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        align-items: center;
+        z-index: 999;
+        top: 64px;
+    }
+    .active ul {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        width: 100vw;
+
+    }
+    .active ul li{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        color: black;
+        position: relative;
+        left: 60px;
+    }
+
+    .menu-toggle{
+        display: flex;
+        transition: all 0.6s;
+        justify-content: center;
+        position: relative;
+    }
+    main{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-width: 100vw;
+    }
+}
+
+@media screen and (max-width: 906px) {
+    .container-logo img{
+        position: relative;
+        left: 0;
+    }
+    header{
+        flex-direction: column;
+        min-width: 100vw;
+    }
+    nav {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
+        position: relative;
+    }
+}
