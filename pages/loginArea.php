@@ -1,3 +1,8 @@
+<?php
+
+include './header.html';
+
+?>
 <form action="../db/login.php" method="post">
     <input type="hidden" name="login">
     <label for="username">Username:</label>
