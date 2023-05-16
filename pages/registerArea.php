@@ -7,4 +7,4 @@
     <input type="submit" value="Criar">
 </form>
 
-<a href="./contact.php">Voltar</a>
+<a href="../contact.php">Voltar</a>

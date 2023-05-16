@@ -1,6 +1,5 @@
 <?php
-
-include './pages/header.html';
+include 'header.php';
 
 
 ?>

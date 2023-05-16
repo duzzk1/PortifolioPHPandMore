@@ -1,8 +1,8 @@
 <?php
-
-include './header.html';
-
+include 'header.php';
 ?>
+<link rel="stylesheet" href="../styles/inicio.css">
+
 <form action="../db/login.php" method="post">
     <input type="hidden" name="login">
     <label for="username">Username:</label>
